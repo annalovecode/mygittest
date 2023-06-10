@@ -1,11 +1,9 @@
 <div>
   <h1>
     Anna Zhao
-    &middot;
-    Thanks to Enji Dev, this website can work!
   </h1>
 </div>
-
+    Thanks to Enji Dev, this website can work!
 A monorepo for my personal website and projects, built with Turborepo and pnpm.
 
 A personal website with a blog, project showcase, and work information.
