@@ -15,9 +15,9 @@ function ProjectsContents() {
   return (
     <>
       <SectionTitle
-        title="The dynamic accent colors."
-        caption="tailwindcss-accent"
-        description="Add accent colors for dynamic, flexible color use in your Tailwind CSS project."
+        title="Netflix Clone Website."
+        caption="React, Redux Toolkit, Nodejs, MongoDB, FireBase"
+        description="Netflix Clone built using React, Redux Toolkit, Firebase, Styled Components, Axios, Node.js, Express and MongoDB."
         button={{
           title: 'learn more',
           href: '/docs/tailwindcss-accent',
@@ -35,9 +35,9 @@ function ProjectsContents() {
                 onClick={() => setCurrentState('github')}
               />
               <SectionButton
-                title="npm package"
+                title="try it in person"
                 icon={<NpmIcon className={clsx('my-2 h-16 w-16')} />}
-                description="Install and use the package with ease thanks to its typed options."
+                description="Use the package with ease thanks to its typed options."
                 active={currentState === 'npm'}
                 onClick={() => setCurrentState('npm')}
               />
@@ -51,21 +51,21 @@ function ProjectsContents() {
                   browserTabs={[
                     {
                       icon: <GitHubIcon className="h-4 w-4" />,
-                      title: 'enjidev/tailwindcss-accent - GitHub',
+                      title: 'annalovecode/netflix-react - GitHub',
                       isActive: currentState === 'github',
                     },
                     {
                       icon: <NpmIcon className="h-4 w-4" />,
-                      title: 'tailwindcss-accent - npm',
+                      title: 'try-it-in-person - npm',
                       isActive: currentState === 'npm',
                     },
                   ]}
                 >
                   {currentState === 'github' && (
                     <GitHubWireframe
-                      author="enjidev"
+                      author="annazhao"
                       license="MIT"
-                      repository="tailwindcss-accent"
+                      repository="netflix-react"
                       description="Adds accent colors for more dynamic and flexible color utilization."
                     />
                   )}

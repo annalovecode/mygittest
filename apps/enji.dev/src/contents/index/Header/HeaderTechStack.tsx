@@ -54,12 +54,12 @@ function HeaderTechStack() {
             <TailwindCssIcon className={clsx('h-6 w-6')} />
           </div>
         </m.li>
-        <m.li variants={animation}>
+        {/* <m.li variants={animation}>
           <div className={clsx('transition duration-200 hover:text-[#0055FF]')}>
             <FramerMotionIcon className={clsx('h-6 w-6')} />
           </div>
-        </m.li>
-        <m.li variants={animation}>
+        </m.li> */}
+        {/* <m.li variants={animation}>
           <div
             className={clsx(
               'transition duration-200 hover:text-[#000000] dark:hover:text-[#FFFFFF]'
@@ -67,7 +67,7 @@ function HeaderTechStack() {
           >
             <NextJsIcon className={clsx('h-6 w-6')} />
           </div>
-        </m.li>
+        </m.li> */}
         <m.li variants={animation}>
           <div className={clsx('h-3 w-[1px] bg-slate-300 dark:bg-slate-700')} />
         </m.li>
@@ -76,11 +76,11 @@ function HeaderTechStack() {
             <VSCodeIcon className={clsx('h-6 w-6')} />
           </div>
         </m.li>
-        <m.li variants={animation}>
+        {/* <m.li variants={animation}>
           <div className={clsx('transition duration-200 hover:text-[#F24E1E]')}>
             <FigmaIcon className={clsx('h-6 w-6')} />
           </div>
-        </m.li>
+        </m.li> */}
       </m.ul>
     </div>
   );
