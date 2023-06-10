@@ -53,8 +53,8 @@ function HeaderImage() {
             animate={controlsHeaderImage}
           >
             <Image
-              alt="Enji Kusnadi Illustration"
-              src="/assets/images/me.png"
+              alt="Anna Zhao Illustration"
+              src="/assets/images/me.svg"
               width={457}
               height={526}
               className={clsx(
