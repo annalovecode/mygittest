@@ -96,7 +96,6 @@ export const getPostStructuredData = ({
         '@type': 'Person',
         name: 'Anna Zhao',
         jobTitle: 'Full-Stack Developer',
-        url: 'https://www.enji.dev/about',
       },
     ],
   });
