@@ -1,5 +1,96 @@
 import TIL from '@/components/mdx/TIL';
 
+<TIL.Items date="2023-06-24">
+
+  <TIL.Item>
+    
+    ## Link MongoDB with Prisma
+
+    <TIL.ItemTags>
+      <TIL.ItemTag>Prisma</TIL.ItemTag>
+      <TIL.ItemTag>MongoDB</TIL.ItemTag>
+    </TIL.ItemTags>
+
+    First to use in MongoDB Atlas, and deploy it to Vercel.
+    Whole process:
+    1. Prisma Usage:
+
+      1).Project initialization:
+      run ```npm init --yes```
+
+      2).Installing Prisma:
+          run `yarn add -D prisma` or `npm i -D prisma`
+
+      3).Generating Prisma project configuration:
+          run `npx prisma init`
+
+      4).Additionally, executing the above commands will automatically generate the following files:
+
+          prisma/schema.prisma: This is the Prisma schema file used to define your database models and relationships.
+
+          .env file: This is an environment variable file used to store sensitive information and configuration parameters, such as database connection details.
+
+      5).set schema.prisma
+
+          !! important: set .env
+
+          `DATABASE_URL="mongodb+srv://test:test@cluster0.ns1yp.mongodb.net/myFirstDatabase/?retryWrites=true&w=majority"`
+          You need to first create a database in MongoDB Atlas, then link to it.
+
+          use `npx prisma db push` to deploy it to MongoDB Atlas
+
+2. How to deploy it to Vercel:
+
+First, click Project Setting - Environment Variables
+
+Then add new Key- Vaule pair:
+
+DATABASE_URL + XXX
+
+Add redeploy it, and it works !
+
+      [Official Docs](https://www.prisma.io/docs/concepts/database-connectors/mongodb)
+
+      [Official Docs](https://www.prisma.io/docs/guides/deployment/deployment-guides/deploying-to-vercel)
+
+      [Reference Docs](https://weihuijieonline.com/post/62f9b260843d301ab3c76f63)
+    </TIL.Item>
+
+</TIL.Items>
+
+<TIL.Items date="2023-06-21">
+
+  <TIL.Item>
+    
+    ## Best Practice with Panel Scroll for BotCard
+
+    <TIL.ItemTags>
+      <TIL.ItemTag>React</TIL.ItemTag>
+      <TIL.ItemTag>react-reveal</TIL.ItemTag>
+      <TIL.ItemTag>typescript</TIL.ItemTag>
+    </TIL.ItemTags>
+
+    A really cool library, you can simply add it to typescript and use it,
+    Sth need to know:
+
+      1. Need to use yarn add react-reveal and npm both.
+
+                (don't know why, but if I just use one, it won't work.)
+
+      2. If you want casecade show, you can add features in Fade.
+
+                ```<Fade bottom cascade duration={4000}> </Fade>```
+
+      3. If you want to import it, use require('/') seems work better.
+
+            ```const Fade = require('react-reveal/Fade');```
+
+       [Official Docs](https://www.react-reveal.com/docs/)
+
+   </TIL.Item>
+
+</TIL.Items>
+
 <TIL.Items date="2023-01-29">
 
   <TIL.Item>
