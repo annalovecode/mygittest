@@ -14,7 +14,7 @@ function ProjectsContents() {
 
   return (
     <>
-      <SectionTitle
+{/*       <SectionTitle
         title="The dynamic accent colors."
         caption="tailwindcss-accent"
         description="Add accent colors for dynamic, flexible color use in your Tailwind CSS project."
@@ -42,7 +42,7 @@ function ProjectsContents() {
                 onClick={() => setCurrentState('npm')}
               />
             </div>
-          </div>
+          </div> */}
           <div className={clsx('w-full', 'lg:w-auto')}>
             <div className={clsx('-mt-[41px]')}>
               <div className={clsx('w-full', 'lg:h-[400px] lg:w-[600px]')}>
