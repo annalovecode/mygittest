@@ -10,17 +10,17 @@ import GitHubWireframe from '@/components/wireframes/GitHub';
 import NpmWireframe from '@/components/wireframes/Npm';
 
 function ProjectsContents() {
-  const [currentState, setCurrentState] = useState<'npm' | 'github'>('github');
+  const [currentState, setCurrentState] = useState<'github'>('github');
 
   return (
     <>
       <SectionTitle
-        title="The dynamic accent colors."
-        caption="tailwindcss-accent"
-        description="Add accent colors for dynamic, flexible color use in your Tailwind CSS project."
+        title="A netflix front-end demo"
+        caption="Netflix front-end demo"
+        description="MERN Stack Project | React Project | Netflix Clone with React, Redux Toolkit, Nodejs, MongoDB."
         button={{
           title: 'learn more',
-          href: '/docs/tailwindcss-accent',
+          href: '/docs/netflixfront-enddemo',
         }}
       />
       <SectionContent>
@@ -34,13 +34,13 @@ function ProjectsContents() {
                 active={currentState === 'github'}
                 onClick={() => setCurrentState('github')}
               />
-              <SectionButton
+{/*               <SectionButton
                 title="npm package"
                 icon={<NpmIcon className={clsx('my-2 h-16 w-16')} />}
                 description="Install and use the package with ease thanks to its typed options."
                 active={currentState === 'npm'}
                 onClick={() => setCurrentState('npm')}
-              />
+              /> */}
             </div>
           </div>
           <div className={clsx('w-full', 'lg:w-auto')}>
@@ -54,28 +54,28 @@ function ProjectsContents() {
                       title: 'enjidev/tailwindcss-accent - GitHub',
                       isActive: currentState === 'github',
                     },
-                    {
-                      icon: <NpmIcon className="h-4 w-4" />,
-                      title: 'tailwindcss-accent - npm',
-                      isActive: currentState === 'npm',
-                    },
+                    // {
+                    //   icon: <NpmIcon className="h-4 w-4" />,
+                    //   title: 'tailwindcss-accent - npm',
+                    //   isActive: currentState === 'npm',
+                    // },
                   ]}
                 >
                   {currentState === 'github' && (
                     <GitHubWireframe
                       author="annazhao"
                       license="MIT"
-                      repository="tailwindcss-accent"
-                      description="Adds accent colors for more dynamic and flexible color utilization."
+                      repository="reactnetflix"
+                      description="MERN Stack Project | React Project | Netflix Clone with React, Redux Toolkit, Nodejs, MongoDB."
                     />
                   )}
-                  {currentState === 'npm' && (
+{/*                   {currentState === 'npm' && (
                     <NpmWireframe
                       packageName="tailwindcss-accent"
                       description="Adds accent colors for more dynamic and flexible color utilization."
                       isWithTypeScript
                     />
-                  )}
+                  )} */}
                 </AppWindow>
               </div>
             </div>
