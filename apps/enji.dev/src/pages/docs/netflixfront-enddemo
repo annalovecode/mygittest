@@ -1,0 +1,18 @@
+---
+title: netflix front-end demo
+description: Netflix Clone built using React, Redux Toolkit, Firebase, Styled Components, Axios, Node.js, Express and MongoDB.
+caption: Demo
+githubUrl: https://github.com/annalovecode/reactnetflix
+demo: https://react-delta-ne.vercel.app/
+layout: Project
+---
+
+import AccentDemo from '@/components/mdx/AccentDemo';
+import Callout from '@/components/mdx/Callout';
+import CodeGroup from '@/components/mdx/CodeGroup';
+import InlineHighlight from '@/components/mdx/InlineHighlight';
+
+Netflix Clone built using React, Redux Toolkit, Firebase, Styled Components, Axios, Node.js, Express and MongoDB.
+
+---
+
