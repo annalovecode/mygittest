@@ -66,7 +66,7 @@ function ProjectsContents() {
                       author="annazhao"
                       license="MIT"
                       repository="reactnetflix"
-                      description="MERN Stack Project | React Project | Netflix Clone with React, Redux Toolkit, Nodejs, MongoDB."
+                      description="MERN Stack Project | React Project | Netflix Clone with React, Redux Toolkit, Nodejs, MongoDB. Youtube: https://www.youtube.com/watch?v=UTou0XU-c94"
                     />
                   )}
 {/*                   {currentState === 'npm' && (
@@ -83,9 +83,9 @@ function ProjectsContents() {
         </div>
       </SectionContent>
         <SectionTitle
-        title="A netflix front-end demo"
-        caption="Netflix front-end demo"
-        description="MERN Stack Project | React Project | Netflix Clone with React, Redux Toolkit, Nodejs, MongoDB."
+        title="A Flutter Stock App"
+        caption="A Stock App"
+        description="Flutter, Dart."
         button={{
           title: 'learn more',
           href: '/docs/netflixfront-enddemo',
